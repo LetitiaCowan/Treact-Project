@@ -810,6 +810,7 @@ GET STARTED
     gap: 1rem;
 }
 
+
 .btn-1,
 .btn-2 {
     padding: 24px 45px;
@@ -937,3 +938,266 @@ FOOTER
     position: absolute;
     bottom: -90px;
 }
+
+/*
+
+MEDIA QUERIES 
+
+*/
+
+@media (max-width: 1274px) {
+    
+    #landing {
+        padding: 0 56px;
+    }
+
+    header,
+    #features,
+    #quality-work,
+    #steps,
+    #values,
+    #pricing,
+    #testimonials,
+    #faqs,
+    #get-started {
+        height: auto;
+    } 
+    
+    /*
+    
+    LANDING 
+    
+    */
+
+    p {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+  
+    .header__container {
+    justify-content: space-between;
+    padding: 80px 0;
+    height: auto;
+
+    }
+
+    .header__img {
+        width: 550px;
+    }
+
+    .header__img--wrapper {
+        width: 550px;
+    }
+
+    .header__info--wrapper {
+        width: 500px;
+    }
+
+
+
+    /*
+    
+    FEATURES 
+    
+    */
+
+    .features {
+        padding: 20px 30px;
+    }
+
+    /*
+    
+    QUALITY WORK 
+    
+    */
+
+    .quality-work__img--wrapper {
+        border: none;
+    }
+
+    .quality-work__img {
+        border: solid 1px rgba(211, 211, 211, 0.585);
+    }
+
+    .features__sub-para {
+        font-size: 16px;
+        line-height: 2;
+    }
+
+    /*
+    
+    STEPS 
+    
+    */
+
+    .pricing__header--wrapper {
+        max-width: 70%;
+    }
+
+    /*
+    
+    FAQS 
+    
+    */
+
+    .faqs {
+        max-width: 85%;
+    }
+}
+
+@media (max-width: 1025px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    p {
+        font-size: 16px;
+        color: black;
+    }
+
+    .header__title {
+        font-size: 30px;
+    }
+
+    .header__container {
+        flex-direction: column;
+    }
+
+    .header__info--wrapper {
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .header__title {
+        width: 510px;
+    }
+
+    .email__border {
+        height: 70px;
+        width: 90%;
+    }
+
+    
+    
+    .email__btn {
+        padding: 18px 32px;
+        
+    }
+
+    .email__text {
+        border: solid 1px rgb(203, 203, 203);
+
+    }
+
+    /*
+    
+    FEATURES 
+    
+    */
+
+    .features__wrapper {
+        padding: 0 40px;
+    }
+
+    .features {
+        width: calc(100% / 2);
+    }
+
+    .features__title {
+        font-size: 48px;
+    }
+
+        /*
+        
+        QUALITY WORK 
+        
+        */
+
+        .quality__work-info--wrapper {
+            padding-right: 12px;
+        }
+
+        /*
+        
+        STEPS 
+        
+        */
+
+        .steps {
+            margin-top: 30px;
+        }
+
+        /*
+        
+        VALUES 
+        
+        */
+
+        .values__sub--container {
+            flex-direction: column;
+            margin-bottom: 30px;
+        }
+
+        .values__sub-wrapper-1 {
+            width: 100%;
+            max-width: 80%;
+        }
+
+        /*
+        
+        PRICING 
+        
+        */
+
+        .pricing__sub--wrapper {
+            flex-direction: column;
+            align-items: center;
+            gap: 3rem;
+
+        }
+
+        .pricing__plan--border,
+        .pricing__plan--border-2 {
+            width: 100%;
+            max-width: 400px;
+            border: solid rgba(211, 211, 211, 0.377) 2px;
+        }
+
+        .pricing__title {
+            font-size: 48px;
+        }
+
+        /*
+        
+        TESTIMONIALS 
+        
+        */
+
+        .profile__wrapper {
+            gap: 1rem;
+        }
+
+
+        /*
+        
+        FAQS
+        
+        */
+
+        .faqs__title {
+            font-size: 48px;
+        }
+
+        .faqs {
+            max-width: 100%;
+        }
+
+        .faq {
+            font-size: 18px;
+        }
+}
+
