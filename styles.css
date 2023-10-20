@@ -13,7 +13,6 @@
     flex-direction: column;
 }
 
-
 .row {
     width: 100%;
     max-width: 1200px;
@@ -30,7 +29,6 @@
     border-radius: 50px;
     font-weight: 600;
     color: white;
-    margin: 0 auto;
 }
 
 h4 {
@@ -66,6 +64,32 @@ p {
     margin-top: 8px;
 }
 
+#steps,
+#values,
+#testimonials {
+    height: 70vh;
+}
+
+#faqs {
+    height: 100vh;
+}
+
+#quality-work {
+    height: 70vh;
+}
+
+#features {
+    height: 85vh;
+}
+
+#pricing {
+    margin-bottom: 200px;
+}
+
+#get-started {
+    margin-bottom: 100px;
+}
+
 
 /*
 
@@ -80,6 +104,8 @@ ID VIEW HEGHT
 NAV 
 
 */
+
+
 
 
 nav {
@@ -121,7 +147,7 @@ nav {
 .nav__link {
     text-decoration: none;
     font-weight: 600;
-    transition: all 1s ease-in-out;
+    transition: all 300ms ease-in-out;
 }
 
 .nav__link:hover {
@@ -210,14 +236,22 @@ header {
 /* EMAIL INPUT  */
 
 .email__border {
-    border: 2px solid rgb(226, 232, 240);
-    border-radius: 50px;
     width: 100%;
-    max-width: 450px;
+    height: 80px;
+    position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 8px 18px;
+}
+
+.email__text {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    color: rgba(0, 0, 0, 0.175);
+    font-weight: 700;
+    border-radius: 50px;
+    padding-left: 20px;
+    
 }
 
 .header__footer--text {
@@ -226,15 +260,25 @@ header {
     color: rgb(160, 174, 192);
 }
 
+.email__btn {
+    position: absolute;
+    right: 10px;
+    font-size: 16px;
+    padding: 20px 32px;
+    background-color:  rgb(100, 21, 255);
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    color: white;
+    
+}
 /*
 
 FEATURES 
 
 */
 
-#features {
-    height: 80vh;
-}
+
 
 .features__heading,
 .features__title,
@@ -299,9 +343,7 @@ QUALITY WORK
 
 */
 
-#quality-work {
-    height: 60vh;
-}
+
 
 .quality-work__container {
     display: flex;
@@ -330,9 +372,7 @@ STEPS
 
 */
 
-#steps {
-    height: 70vh;
-}
+
 
 .steps__container {
     display: flex;
@@ -392,10 +432,7 @@ VALUES
 
 */
 
-#values {
-    height: 80vh;
 
-}
 
 .values__container {
     display: flex;
@@ -430,12 +467,24 @@ VALUES
     justify-content: center;
 }
 
-.values__icon--wrapper {
-    background-color: #6a4ba9;
+.values__icon--wrapper,
+.values__icon-2--wrapper {
+    height: 35px;
+    width: 35px;
+    justify-content: center;
+    align-items: center;
     display: flex;
     border-radius: 50px;
-    padding: 12px;
-    height: 100%;
+}
+
+.values__icon--wrapper {
+    background-color: rgb(154 230 180);
+    color: rgb(54, 138, 83);
+}
+
+.values__icon-2--wrapper {
+    background-color: rgb(254 178 178);
+    color: rgb(158, 44, 44);
 }
 
 .values__sub-title {
@@ -460,10 +509,7 @@ PLAN
 
 */
 
-#pricing {
-    height: 100vh;
 
-}
 
 .pricing__sub--wrapper {
     display: flex;
@@ -603,9 +649,7 @@ TESTIMONIALS
 
 */
 
-#testimonials {
-    height: 80vh;
-}
+
 
 .testimonials__container {
     display: flex;
@@ -699,9 +743,7 @@ FAQS
 
 */
 
-#faqs {
-    height: 80vh;
-}
+
 
 
 .faqs {
@@ -733,7 +775,7 @@ FAQS
 }
  
 .faq:hover {
-    background-color: rgba(50, 59, 75, 0.105);
+    background-color: rgba(20, 51, 110, 0.141);
     cursor: no-drop;
 }
 
@@ -742,9 +784,7 @@ FAQS
 GET STARTED
 
 */
-#get-started {
-    height: 80vh;
-}
+
 
 .get-starterd__wrapper {
     background-color: rgb(100, 21, 255);
@@ -808,33 +848,92 @@ FOOTER
 */
 
 #footer {
-    
     height: 50vh;
     background-color: #5906ff;
     position: relative;
+    padding: 100px 30px;
+}
+
+.footer__row {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
 }
 
 .footer__header--container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 
 
 .footer__treact {
-    width: 40px;
+    width: 32px;
 }
     
 .footer__footer--container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
-    max-width: 1200px;
     position: absolute;
-    bottom: 25%;
+    bottom: -200px;
 }
+
+
 
 .footer__treact--wrapper {
     display: flex;
     align-items: center;
+}
+
+.footer__link--wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: white;
+    font-size: 14px;
+}
+
+.footer__main-link {
+    font-weight: 700;
+    margin-bottom: 14px;
+    font-size: 16px;
+}
+
+.footer__social--wrapper {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.footer__socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.footer__treact--text {
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+    margin-left: 8px;
+}
+
+.footer__copy {
+    color: rgba(255, 255, 255, 0.685);
+}
+
+.offset__border {
+    width: 100%;
+    border-bottom: solid rgba(255, 255, 255, 0.203) 1px;
+    position: absolute;
+    bottom: -90px;
 }
