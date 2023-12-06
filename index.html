@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="https://kit.fontawesome.com/bb8fd33881.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
   </head>
 
   <body>
@@ -29,17 +30,54 @@
             <d  iv class="log-in">
               <li><a class="nav__link" href="">Log in</a></li>
               <button class="btn">Sign in</button>
+            </ul>
+            <button class="btn__menu" onclick= openMenu()>
+              <i class="fas fa-bars"></i>
+            </button>
+    
+            <div class="menu__backdrop"> 
+              <button class="btn__menu btn__menu--close" onclick= closeMenu()>
+                <i class="fas fa-times"></i>
+              </button>
+  
+              
+              <ul class="menu__links">
+                <li class="menu__list">
+                  <a href="#" class="menu__link" onclick= closeMenu()>About</a>
+                </li>
+      
+                <li class="menu__list">
+                  <a href="#" class="menu__link" onclick= closeMenu()>Blog</a>
+                </li>
+
+                <li class="menu__list">
+                  <a href="#" class="menu__link" onclick= closeMenu()>Pricing</a>
+                </li>
+
+                <li class="menu__list">
+                  <a href="#" class="menu__link" onclick= closeMenu()>Contact Us</a>
+                </li>
+      
+               <button class="btn menu__btn--sign-up">
+                <span>Sign up</span>
+               </button>
+              </ul>
             </div>
-          </ul>
-        </div>
-      </nav>
+          </div>
+          
+          
+          
+
+        </nav>
+          
+          
 
       <header>
         <div class="header__container">
 
           <div class="header__info--wrapper">
             <h1 class="header__title">Beautiful React Templates <span class="text-purple">for you.</span></h1>
-            <p>
+            <p class="header__para">
               Our templates are easy to setup, understand and customize. Fully
               modular components with a variety of pages and components.
             </p>
@@ -151,7 +189,7 @@
 
             <div class="quality__work-info--wrapper">
               <h4 >QUALITY WORK</h4>
-              <h1 >Designed & Developed by Professionals.</h1>
+              <h1 class="quality__work--heading" >Designed & Developed by Professionals.</h1>
               <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               <button class="btn margin-top">Learn More</button>
             </div>
@@ -229,7 +267,7 @@
                 <span class="values__icon--wrapper">
                   <i class="fa-solid fa-dollar-sign"></i>                </span>
                </div>
-                <p class="margin-top">We promise to offer you the best rate we can - at par with the industry standard.</p>
+                <p class="margin-top values__info--para">We promise to offer you the best rate we can - at par with the industry standard.</p>
               </div>
 
               <div class="values__sub-wrapper-1">
@@ -241,7 +279,7 @@
                 </figure>
                </div>
       
-                <p class="margin-top">We assure you that our templates are designed and created by professional designers.</p>
+                <p class="margin-top values__info--para">We assure you that our templates are designed and created by professional designers.</p>
               </div>
 
             </div>
@@ -467,7 +505,7 @@
     </main>
     
     <footer id="footer">
-      <div class="cotainter">
+            <div class="containter">
         <div class="footer__row">
           <div class="footer__header--container">
 
