@@ -71,7 +71,7 @@ p {
 }
 
 #faqs {
-    height: 100vh;
+    margin-top: 200px;
 }
 
 #quality-work {
@@ -79,7 +79,7 @@ p {
 }
 
 #features {
-    height: 85vh;
+    margin: 200px 0;
 }
 
 #pricing {
@@ -93,6 +93,7 @@ p {
 .no-curser {
     cursor: none;
 }
+
 
 
 
@@ -268,9 +269,6 @@ ul {
         display: none;
     }
 }
-
-
-
 
 
 /*
@@ -525,7 +523,9 @@ VALUES
 
 */
 
-
+#values {
+    height: 100vh;
+}
 
 .values__container {
     display: flex;
@@ -943,7 +943,7 @@ FOOTER
 */
 
 #footer {
-    height: 50vh;
+    height: 500px;
     background-color: #5906ff;
     position: relative;
     padding: 100px 30px;
@@ -1349,7 +1349,6 @@ MEDIA QUERIES
         */
 
         #footer {
-            height: 45vh;
             padding: 90px 30px 0 30px;
         }
 }
